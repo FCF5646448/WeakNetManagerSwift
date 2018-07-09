@@ -133,39 +133,9 @@ class FCFPlaceHolderContentView:UIView {
             self.ndBtnsFrame = CGRect(x: 0, y: self.frame.maxY - bH, width: self.frame.width, height: bH)
         }
         
-        if !NoNetManager.netWorking() { //没网 
-            let item = FCFPlaceHolderBtnItem(title: "网络诊断",btntitleColor:UIColor.white) { (btn) in
-                let vc = SetGuideController()
-                if let baseVC = self.firstController() {
-                    if baseVC.navigationController == nil {
-                        let nav = UINavigationController(rootViewController: vc)
-                        baseVC.present(nav, animated: true, completion: nil)
-                    }else{
-                        vc.hidesBottomBarWhenPushed = true
-                        baseVC.navigationController?.pushViewController(vc, animated: true)
-                    }
-                }
-            }
-            item.layer.cornerRadius = 22
-            item.layer.masksToBounds = true
-            item.backgroundColor = UIColor.hexString(hex: "0x00a0ea")
-            
-            let top:CGFloat = self.frame.height - 130 - 48 - 44
-            let topy = top/2.0
-            
-            self.ndBgImgViewFrame = CGRect(x: 0, y: topy, width: self.frame.width, height: 130)
-            self.ndBgImg = UIImage(named: "nowifi")!
-            
-            self.ndPlaceholder = "无法获取网络内容\n请查看网络设置"
-            
-            self.ndHintLabelFrame = CGRect(x: 0, y: self.ndBgImgView.frame.maxY, width: self.frame.width, height: 48)
-            
-            self.ndBtns = [item]
-            
-            self.ndBtnsFrame = CGRect(x: 0, y: self.ndHintLabel.frame.maxY+LineSpacing, width: self.frame.width, height: 44)
-            
+        if !NoNetManager.netWorking() { //没网
+            defaultNoNet()
             self.initUI(hasImg: true, hasPlaceLabel: true,hasBtn: true)
-            
             return
         }
         
@@ -174,10 +144,71 @@ class FCFPlaceHolderContentView:UIView {
         }else{
             self.initUI(hasImg: hasImg, hasPlaceLabel: hasPlaceLabel,hasBtn: hasBtn)
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(_:)), name: Notification.Name.reachabilityChanged, object: nil)
+    }
+    
+    func defaultNoNet(){
+        let item = FCFPlaceHolderBtnItem(title: "网络诊断",btntitleColor:UIColor.white) { (btn) in
+            let vc = SetGuideController()
+            if let baseVC = self.firstController() {
+                if baseVC.navigationController == nil {
+                    let nav = UINavigationController(rootViewController: vc)
+                    baseVC.present(nav, animated: true, completion: nil)
+                }else{
+                    vc.hidesBottomBarWhenPushed = true
+                    baseVC.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+        }
+        item.layer.cornerRadius = 22
+        item.layer.masksToBounds = true
+        item.backgroundColor = UIColor.hexString(hex: "0x00a0ea")
+        
+        let top:CGFloat = self.frame.height - 130 - 48 - 44
+        let topy = top/2.0
+        
+        self.ndBgImgViewFrame = CGRect(x: 0, y: topy, width: self.frame.width, height: 130)
+        self.ndBgImg = UIImage(named: "nowifi")!
+        
+        self.ndPlaceholder = "无法获取网络内容\n请查看网络设置"
+        
+        self.ndHintLabelFrame = CGRect(x: 0, y: self.ndBgImgView.frame.maxY, width: self.frame.width, height: 48)
+        
+        self.ndBtns = [item]
+        
+        self.ndBtnsFrame = CGRect(x: 0, y: self.ndHintLabel.frame.maxY+LineSpacing, width: self.frame.width, height: 44)
+    }
+    
+    @objc func reachabilityChanged(_ notificate:Notification) {
+        if let cursh:Reachability = notificate.object as? Reachability {
+            switch cursh.currentReachabilityStatus(){
+            case NetworkStatus.init(0):
+                for subview in self.subviews{
+                    subview.removeFromSuperview()
+                }
+                defaultNoNet()
+                self.initUI(hasImg: true, hasPlaceLabel: true,hasBtn: true)
+                print("无网络")
+                break
+            case NetworkStatus.init(1):
+                print("wifi")
+                break
+            case NetworkStatus.init(2):
+                print("蜂窝")
+                break
+            default:
+                break
+            }
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: Notification.Name.reachabilityChanged, object: nil)
     }
     
 }
