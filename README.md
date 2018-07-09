@@ -33,7 +33,7 @@ let hintView = FCFPlaceHolderContentView(frame: frame, hasImg: true, hasPlaceLab
 hintView.center = self.view.center
 view.addSubview(hintView)
 ```
-![image] (https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/noDataUIType02.jpeg)
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/noDataUIType02.jpeg)
 
 cell蒙版样式，类似简书：
 ```
@@ -43,10 +43,10 @@ hintView.center = self.view.center
 view.addSubview(hintView)
 
 ```
-![image] (https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/WechatIMG10.jpeg)
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/WechatIMG10.jpeg)
 
 无网络状态
 
-![image] (https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nonet.jpeg)
-![image] (https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nonetSet.jpeg)
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nonet.jpeg)
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nonetSet.jpeg)
 
