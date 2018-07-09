@@ -100,6 +100,7 @@ class FCFPlaceHolderContentView:UIView {
          ndBtnsHeight:CGFloat?=nil,
          gradLayer:Bool=false) {
         super.init(frame: frame)
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(_:)), name: Notification.Name.reachabilityChanged, object: nil)
         
         if let bgimg = bgimg {
             self.ndBgImg = bgimg
@@ -144,8 +145,6 @@ class FCFPlaceHolderContentView:UIView {
         }else{
             self.initUI(hasImg: hasImg, hasPlaceLabel: hasPlaceLabel,hasBtn: hasBtn)
         }
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(_:)), name: Notification.Name.reachabilityChanged, object: nil)
     }
     
     func defaultNoNet(){
