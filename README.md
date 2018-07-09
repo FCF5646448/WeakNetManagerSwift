@@ -6,7 +6,7 @@
 // 默认样式 只有无数据图片和文字提示
 showPlaceHold() 
 ```
-![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nodatadefault.jpeg){:height="50px" width="50px"}
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nodatadefault.jpeg){ width=50% }
 
 定制按钮
 ```
