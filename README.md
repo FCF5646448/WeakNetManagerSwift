@@ -7,6 +7,7 @@
 showPlaceHold() 
 ```
 ![image] (https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nodatadefault.jpeg)
+
 定制按钮
 ```
 //      两个按钮 无数据
@@ -33,6 +34,7 @@ hintView.center = self.view.center
 view.addSubview(hintView)
 ```
 ![image] (https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/noDataUIType02.jpeg)
+
 cell蒙版样式，类似简书：
 ```
 //cell 蒙版
@@ -44,6 +46,7 @@ view.addSubview(hintView)
 ![image] (https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/WechatIMG10.jpeg)
 
 无网络状态
+
 ![image] (https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nonet.jpeg)
 ![image] (https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nonetSet.jpeg)
 
