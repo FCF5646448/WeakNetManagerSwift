@@ -12,6 +12,21 @@
 		195AB30C20D102740088FEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195AB30A20D102740088FEC3 /* Main.storyboard */; };
 		195AB30E20D102750088FEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195AB30D20D102750088FEC3 /* Assets.xcassets */; };
 		195AB31120D102750088FEC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195AB30F20D102750088FEC3 /* LaunchScreen.storyboard */; };
+		195AB31F20D243FB0088FEC3 /* NoDataImg.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195AB31E20D243FB0088FEC3 /* NoDataImg.xcassets */; };
+		1961F7A120F3000800BCB698 /* SetGuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1961F7A020F3000800BCB698 /* SetGuideController.swift */; };
+		1963AC8920D8DD9F00CA4B7A /* NoNetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8420D8DD9F00CA4B7A /* NoNetView.swift */; };
+		1963AC8A20D8DD9F00CA4B7A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8620D8DD9F00CA4B7A /* UIColorExtension.swift */; };
+		1963AC8B20D8DD9F00CA4B7A /* UIViewLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8720D8DD9F00CA4B7A /* UIViewLayoutConstraint.swift */; };
+		1963AC8C20D8DD9F00CA4B7A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8820D8DD9F00CA4B7A /* StringExtension.swift */; };
+		1963AC9420D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8E20D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift */; };
+		1963AC9520D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8F20D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift */; };
+		1963AC9620D8DDEA00CA4B7A /* NoDataScrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC9020D8DDEA00CA4B7A /* NoDataScrollview.swift */; };
+		1963AC9720D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC9120D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift */; };
+		1963AC9820D8DDEA00CA4B7A /* MaskLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC9220D8DDEA00CA4B7A /* MaskLayerView.swift */; };
+		1963AC9920D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1963AC9320D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib */; };
+		1963AC9B20D8DF9800CA4B7A /* NoNetGuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC9A20D8DF9800CA4B7A /* NoNetGuideController.swift */; };
+		1963ACA620D8F0E500CA4B7A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963ACA520D8F0E500CA4B7A /* Reachability.m */; };
+		1963ACA820D8F13000CA4B7A /* NoNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963ACA720D8F13000CA4B7A /* NoNetManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +37,23 @@
 		195AB30D20D102750088FEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		195AB31020D102750088FEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		195AB31220D102750088FEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195AB31E20D243FB0088FEC3 /* NoDataImg.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NoDataImg.xcassets; sourceTree = "<group>"; };
+		1961F7A020F3000800BCB698 /* SetGuideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGuideController.swift; sourceTree = "<group>"; };
+		1963AC8420D8DD9F00CA4B7A /* NoNetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoNetView.swift; sourceTree = "<group>"; };
+		1963AC8620D8DD9F00CA4B7A /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		1963AC8720D8DD9F00CA4B7A /* UIViewLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewLayoutConstraint.swift; sourceTree = "<group>"; };
+		1963AC8820D8DD9F00CA4B7A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		1963AC8E20D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFPlaceHolderContentView.swift; sourceTree = "<group>"; };
+		1963AC8F20D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFPlaceHolderBtnItem.swift; sourceTree = "<group>"; };
+		1963AC9020D8DDEA00CA4B7A /* NoDataScrollview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataScrollview.swift; sourceTree = "<group>"; };
+		1963AC9120D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataHintSCrollViewCell.swift; sourceTree = "<group>"; };
+		1963AC9220D8DDEA00CA4B7A /* MaskLayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskLayerView.swift; sourceTree = "<group>"; };
+		1963AC9320D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoDataHintSCrollViewCell.xib; sourceTree = "<group>"; };
+		1963AC9A20D8DF9800CA4B7A /* NoNetGuideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetGuideController.swift; sourceTree = "<group>"; };
+		1963ACA320D8F0E400CA4B7A /* WeakNetManagerSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeakNetManagerSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		1963ACA420D8F0E500CA4B7A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1963ACA520D8F0E500CA4B7A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1963ACA720D8F13000CA4B7A /* NoNetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +86,55 @@
 		195AB30520D102740088FEC3 /* WeakNetManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1963AC8D20D8DDEA00CA4B7A /* noData */,
+				1963AC8520D8DD9F00CA4B7A /* extension */,
+				1963AC8320D8DD9F00CA4B7A /* noNet */,
 				195AB30620D102740088FEC3 /* AppDelegate.swift */,
 				195AB30820D102740088FEC3 /* ViewController.swift */,
 				195AB30A20D102740088FEC3 /* Main.storyboard */,
 				195AB30D20D102750088FEC3 /* Assets.xcassets */,
 				195AB30F20D102750088FEC3 /* LaunchScreen.storyboard */,
 				195AB31220D102750088FEC3 /* Info.plist */,
+				195AB31E20D243FB0088FEC3 /* NoDataImg.xcassets */,
 			);
 			path = WeakNetManagerSwift;
+			sourceTree = "<group>";
+		};
+		1963AC8320D8DD9F00CA4B7A /* noNet */ = {
+			isa = PBXGroup;
+			children = (
+				1963ACA420D8F0E500CA4B7A /* Reachability.h */,
+				1963ACA520D8F0E500CA4B7A /* Reachability.m */,
+				1963AC8420D8DD9F00CA4B7A /* NoNetView.swift */,
+				1963AC9A20D8DF9800CA4B7A /* NoNetGuideController.swift */,
+				1963ACA320D8F0E400CA4B7A /* WeakNetManagerSwift-Bridging-Header.h */,
+				1963ACA720D8F13000CA4B7A /* NoNetManager.swift */,
+				1961F7A020F3000800BCB698 /* SetGuideController.swift */,
+			);
+			path = noNet;
+			sourceTree = "<group>";
+		};
+		1963AC8520D8DD9F00CA4B7A /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				1963AC8620D8DD9F00CA4B7A /* UIColorExtension.swift */,
+				1963AC8720D8DD9F00CA4B7A /* UIViewLayoutConstraint.swift */,
+				1963AC8820D8DD9F00CA4B7A /* StringExtension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		1963AC8D20D8DDEA00CA4B7A /* noData */ = {
+			isa = PBXGroup;
+			children = (
+				1963AC8E20D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift */,
+				1963AC8F20D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift */,
+				1963AC9020D8DDEA00CA4B7A /* NoDataScrollview.swift */,
+				1963AC9120D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift */,
+				1963AC9220D8DDEA00CA4B7A /* MaskLayerView.swift */,
+				1963AC9320D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib */,
+			);
+			path = noData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +169,7 @@
 				TargetAttributes = {
 					195AB30220D102740088FEC3 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -124,7 +198,9 @@
 			files = (
 				195AB31120D102750088FEC3 /* LaunchScreen.storyboard in Resources */,
 				195AB30E20D102750088FEC3 /* Assets.xcassets in Resources */,
+				195AB31F20D243FB0088FEC3 /* NoDataImg.xcassets in Resources */,
 				195AB30C20D102740088FEC3 /* Main.storyboard in Resources */,
+				1963AC9920D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +211,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1963ACA620D8F0E500CA4B7A /* Reachability.m in Sources */,
+				1963AC9620D8DDEA00CA4B7A /* NoDataScrollview.swift in Sources */,
+				1963AC9420D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift in Sources */,
+				1963AC9820D8DDEA00CA4B7A /* MaskLayerView.swift in Sources */,
 				195AB30920D102740088FEC3 /* ViewController.swift in Sources */,
+				1963AC8C20D8DD9F00CA4B7A /* StringExtension.swift in Sources */,
+				1963AC9520D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift in Sources */,
+				1963AC8920D8DD9F00CA4B7A /* NoNetView.swift in Sources */,
+				1963AC8A20D8DD9F00CA4B7A /* UIColorExtension.swift in Sources */,
+				1963AC9720D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift in Sources */,
 				195AB30720D102740088FEC3 /* AppDelegate.swift in Sources */,
+				1963AC8B20D8DD9F00CA4B7A /* UIViewLayoutConstraint.swift in Sources */,
+				1963ACA820D8F13000CA4B7A /* NoNetManager.swift in Sources */,
+				1961F7A120F3000800BCB698 /* SetGuideController.swift in Sources */,
+				1963AC9B20D8DF9800CA4B7A /* NoNetGuideController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,15 +369,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ADX9ZP8Q93;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = WeakNetManagerSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fcf.com.WeakNetManagerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeakNetManagerSwift/noNet/WeakNetManagerSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,15 +392,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ADX9ZP8Q93;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = WeakNetManagerSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fcf.com.WeakNetManagerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeakNetManagerSwift/noNet/WeakNetManagerSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
