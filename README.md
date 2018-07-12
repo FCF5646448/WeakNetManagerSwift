@@ -6,6 +6,7 @@
 // 默认样式 只有无数据图片和文字提示
 showPlaceHold() 
 ```
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nodatadefault.jpeg){ width=30% }
 
 定制按钮
 ```
@@ -32,6 +33,7 @@ let hintView = FCFPlaceHolderContentView(frame: frame, hasImg: true, hasPlaceLab
 hintView.center = self.view.center
 view.addSubview(hintView)
 ```
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/noDataUIType02.jpeg)
 
 cell蒙版样式，类似简书：
 ```
@@ -41,3 +43,10 @@ hintView.center = self.view.center
 view.addSubview(hintView)
 
 ```
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/WechatIMG10.jpeg)
+
+无网络状态
+
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nonet.jpeg)
+![image](https://github.com/FCF5646448/WeakNetManagerSwift/blob/master/screenshots/nonetSet.jpeg)
+
