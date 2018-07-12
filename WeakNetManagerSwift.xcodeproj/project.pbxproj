@@ -19,14 +19,15 @@
 		1963AC8B20D8DD9F00CA4B7A /* UIViewLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8720D8DD9F00CA4B7A /* UIViewLayoutConstraint.swift */; };
 		1963AC8C20D8DD9F00CA4B7A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8820D8DD9F00CA4B7A /* StringExtension.swift */; };
 		1963AC9420D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8E20D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift */; };
-		1963AC9520D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC8F20D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift */; };
-		1963AC9620D8DDEA00CA4B7A /* NoDataScrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC9020D8DDEA00CA4B7A /* NoDataScrollview.swift */; };
-		1963AC9720D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC9120D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift */; };
-		1963AC9820D8DDEA00CA4B7A /* MaskLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC9220D8DDEA00CA4B7A /* MaskLayerView.swift */; };
-		1963AC9920D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1963AC9320D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib */; };
 		1963AC9B20D8DF9800CA4B7A /* NoNetGuideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963AC9A20D8DF9800CA4B7A /* NoNetGuideController.swift */; };
 		1963ACA620D8F0E500CA4B7A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963ACA520D8F0E500CA4B7A /* Reachability.m */; };
 		1963ACA820D8F13000CA4B7A /* NoNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963ACA720D8F13000CA4B7A /* NoNetManager.swift */; };
+		19A9E46C20F72CEB00260FEF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A9E46B20F72CEB00260FEF /* SystemConfiguration.framework */; };
+		19A9E47320F73EDF00260FEF /* FCFPlaceHolderBtnItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A9E46E20F73EDF00260FEF /* FCFPlaceHolderBtnItem.swift */; };
+		19A9E47420F73EDF00260FEF /* NoDataScrollview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A9E46F20F73EDF00260FEF /* NoDataScrollview.swift */; };
+		19A9E47520F73EDF00260FEF /* NoDataHintSCrollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A9E47020F73EDF00260FEF /* NoDataHintSCrollViewCell.swift */; };
+		19A9E47620F73EDF00260FEF /* MaskLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A9E47120F73EDF00260FEF /* MaskLayerView.swift */; };
+		19A9E47720F73EDF00260FEF /* NoDataHintSCrollViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A9E47220F73EDF00260FEF /* NoDataHintSCrollViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,16 +45,17 @@
 		1963AC8720D8DD9F00CA4B7A /* UIViewLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewLayoutConstraint.swift; sourceTree = "<group>"; };
 		1963AC8820D8DD9F00CA4B7A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		1963AC8E20D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFPlaceHolderContentView.swift; sourceTree = "<group>"; };
-		1963AC8F20D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFPlaceHolderBtnItem.swift; sourceTree = "<group>"; };
-		1963AC9020D8DDEA00CA4B7A /* NoDataScrollview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataScrollview.swift; sourceTree = "<group>"; };
-		1963AC9120D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataHintSCrollViewCell.swift; sourceTree = "<group>"; };
-		1963AC9220D8DDEA00CA4B7A /* MaskLayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskLayerView.swift; sourceTree = "<group>"; };
-		1963AC9320D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoDataHintSCrollViewCell.xib; sourceTree = "<group>"; };
 		1963AC9A20D8DF9800CA4B7A /* NoNetGuideController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetGuideController.swift; sourceTree = "<group>"; };
 		1963ACA320D8F0E400CA4B7A /* WeakNetManagerSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeakNetManagerSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		1963ACA420D8F0E500CA4B7A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		1963ACA520D8F0E500CA4B7A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1963ACA720D8F13000CA4B7A /* NoNetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetManager.swift; sourceTree = "<group>"; };
+		19A9E46B20F72CEB00260FEF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		19A9E46E20F73EDF00260FEF /* FCFPlaceHolderBtnItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCFPlaceHolderBtnItem.swift; sourceTree = "<group>"; };
+		19A9E46F20F73EDF00260FEF /* NoDataScrollview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataScrollview.swift; sourceTree = "<group>"; };
+		19A9E47020F73EDF00260FEF /* NoDataHintSCrollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataHintSCrollViewCell.swift; sourceTree = "<group>"; };
+		19A9E47120F73EDF00260FEF /* MaskLayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskLayerView.swift; sourceTree = "<group>"; };
+		19A9E47220F73EDF00260FEF /* NoDataHintSCrollViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoDataHintSCrollViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A9E46C20F72CEB00260FEF /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 			children = (
 				195AB30520D102740088FEC3 /* WeakNetManagerSwift */,
 				195AB30420D102740088FEC3 /* Products */,
+				19A9E46A20F72CEB00260FEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,13 +132,29 @@
 			isa = PBXGroup;
 			children = (
 				1963AC8E20D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift */,
-				1963AC8F20D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift */,
-				1963AC9020D8DDEA00CA4B7A /* NoDataScrollview.swift */,
-				1963AC9120D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift */,
-				1963AC9220D8DDEA00CA4B7A /* MaskLayerView.swift */,
-				1963AC9320D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib */,
+				19A9E46D20F73EDF00260FEF /* views */,
 			);
 			path = noData;
+			sourceTree = "<group>";
+		};
+		19A9E46A20F72CEB00260FEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19A9E46B20F72CEB00260FEF /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19A9E46D20F73EDF00260FEF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				19A9E46E20F73EDF00260FEF /* FCFPlaceHolderBtnItem.swift */,
+				19A9E46F20F73EDF00260FEF /* NoDataScrollview.swift */,
+				19A9E47020F73EDF00260FEF /* NoDataHintSCrollViewCell.swift */,
+				19A9E47120F73EDF00260FEF /* MaskLayerView.swift */,
+				19A9E47220F73EDF00260FEF /* NoDataHintSCrollViewCell.xib */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +220,7 @@
 				195AB30E20D102750088FEC3 /* Assets.xcassets in Resources */,
 				195AB31F20D243FB0088FEC3 /* NoDataImg.xcassets in Resources */,
 				195AB30C20D102740088FEC3 /* Main.storyboard in Resources */,
-				1963AC9920D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.xib in Resources */,
+				19A9E47720F73EDF00260FEF /* NoDataHintSCrollViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,15 +232,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1963ACA620D8F0E500CA4B7A /* Reachability.m in Sources */,
-				1963AC9620D8DDEA00CA4B7A /* NoDataScrollview.swift in Sources */,
 				1963AC9420D8DDEA00CA4B7A /* FCFPlaceHolderContentView.swift in Sources */,
-				1963AC9820D8DDEA00CA4B7A /* MaskLayerView.swift in Sources */,
+				19A9E47420F73EDF00260FEF /* NoDataScrollview.swift in Sources */,
 				195AB30920D102740088FEC3 /* ViewController.swift in Sources */,
+				19A9E47320F73EDF00260FEF /* FCFPlaceHolderBtnItem.swift in Sources */,
+				19A9E47520F73EDF00260FEF /* NoDataHintSCrollViewCell.swift in Sources */,
 				1963AC8C20D8DD9F00CA4B7A /* StringExtension.swift in Sources */,
-				1963AC9520D8DDEA00CA4B7A /* FCFPlaceHolderBtnItem.swift in Sources */,
 				1963AC8920D8DD9F00CA4B7A /* NoNetView.swift in Sources */,
 				1963AC8A20D8DD9F00CA4B7A /* UIColorExtension.swift in Sources */,
-				1963AC9720D8DDEA00CA4B7A /* NoDataHintSCrollViewCell.swift in Sources */,
+				19A9E47620F73EDF00260FEF /* MaskLayerView.swift in Sources */,
 				195AB30720D102740088FEC3 /* AppDelegate.swift in Sources */,
 				1963AC8B20D8DD9F00CA4B7A /* UIViewLayoutConstraint.swift in Sources */,
 				1963ACA820D8F13000CA4B7A /* NoNetManager.swift in Sources */,
@@ -379,7 +399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fcf.com.WeakNetManagerSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = fcf.com.WeakNetManagerSwift1111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeakNetManagerSwift/noNet/WeakNetManagerSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -402,7 +422,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fcf.com.WeakNetManagerSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = fcf.com.WeakNetManagerSwift1111;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeakNetManagerSwift/noNet/WeakNetManagerSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

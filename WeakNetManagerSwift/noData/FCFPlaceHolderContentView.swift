@@ -24,7 +24,7 @@ class FCFPlaceHolderContentView:UIView {
     lazy var ndHintLabel:UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.lineBreakMode = .byWordWrapping
+        label.lineBreakMode = .byCharWrapping
         label.textAlignment = self.ndPlaceholderTextAlign
         label.textColor = UIColor.hexString(hex: self.ndPlaceholderTextColor)
         label.font = UIFont.systemFont(ofSize: self.ndPlaceholderTextSize)
@@ -47,6 +47,20 @@ class FCFPlaceHolderContentView:UIView {
     //滚动视图 cell 或者 webview
     lazy var ndScrollView:NoDataScrollview = {
         return NoDataScrollview(frame: self.bounds,type:.cell)
+    }()
+    
+    //无网络的view
+    lazy var noNetView:UIView = {
+        let v = UIView(frame: self.bounds)
+        v.backgroundColor = UIColor.white
+        return v
+    }()
+    
+    //无数据提醒的view
+    lazy var noDataView:UIView = {
+        let v = UIView(frame: self.bounds)
+        v.backgroundColor = UIColor.white
+        return v
     }()
     
     //MARK: 图片相关属性
@@ -74,6 +88,7 @@ class FCFPlaceHolderContentView:UIView {
     var ndBgImgViewFrame:CGRect?
     var ndHintLabelFrame:CGRect?
     var ndBtnsFrame:CGRect?
+    
     
     
     //MARK:外部初始化接口 默认的样式从上到下：Img-label-btn
@@ -134,20 +149,49 @@ class FCFPlaceHolderContentView:UIView {
             self.ndBtnsFrame = CGRect(x: 0, y: self.frame.maxY - bH, width: self.frame.width, height: bH)
         }
         
-        if !NoNetManager.netWorking() { //没网
-            defaultNoNet()
-            self.initUI(hasImg: true, hasPlaceLabel: true,hasBtn: true)
-            return
-        }
-        
         if gradLayer {
             self.addSubview(self.ndScrollView)
         }else{
-            self.initUI(hasImg: hasImg, hasPlaceLabel: hasPlaceLabel,hasBtn: hasBtn)
+            self.updateUI(hasImg: hasImg, hasPlaceLabel: hasPlaceLabel,hasBtn: hasBtn)
+        }
+        
+        if !NoNetManager.shareInstance.netWorking() { //没网
+            addNoNetView()
+            return
         }
     }
     
-    func defaultNoNet(){
+    func addNoNetView(){
+        
+        self.noNetView.removeFromSuperview()
+        self.addSubview(self.noNetView)
+        
+        
+        let top:CGFloat = self.frame.height - 130 - 48 - 44
+        let topy = top/2.0
+        
+        
+        let imgview = UIImageView()
+        imgview.image = UIImage(named: "nowifi")!
+        imgview.contentMode = .scaleAspectFit
+        imgview.frame = CGRect(x: 0, y: topy, width: self.frame.width, height: 130)
+        self.noNetView.addSubview(imgview)
+        
+        
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.lineBreakMode = .byCharWrapping
+        label.textAlignment = self.ndPlaceholderTextAlign
+        label.textColor = UIColor.hexString(hex: self.ndPlaceholderTextColor)
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.text = "无法获取网络内容\n请查看网络设置"
+        label.frame = CGRect(x: 0, y: self.ndBgImgView.frame.maxY, width: self.frame.width, height: 48)
+        self.noNetView.addSubview(label)
+        
+        let ndBtnsview = UIView()
+        ndBtnsview.frame = CGRect(x: 0, y: self.ndHintLabel.frame.maxY+LineSpacing, width: self.frame.width, height: 44)
+        self.noNetView.addSubview(ndBtnsview)
+        
         let item = FCFPlaceHolderBtnItem(title: "网络诊断",btntitleColor:UIColor.white) { (btn) in
             let vc = SetGuideController()
             if let baseVC = self.firstController() {
@@ -163,37 +207,26 @@ class FCFPlaceHolderContentView:UIView {
         item.layer.cornerRadius = 22
         item.layer.masksToBounds = true
         item.backgroundColor = UIColor.hexString(hex: "0x00a0ea")
-        
-        let top:CGFloat = self.frame.height - 130 - 48 - 44
-        let topy = top/2.0
-        
-        self.ndBgImgViewFrame = CGRect(x: 0, y: topy, width: self.frame.width, height: 130)
-        self.ndBgImg = UIImage(named: "nowifi")!
-        
-        self.ndPlaceholder = "无法获取网络内容\n请查看网络设置"
-        
-        self.ndHintLabelFrame = CGRect(x: 0, y: self.ndBgImgView.frame.maxY, width: self.frame.width, height: 48)
-        
-        self.ndBtns = [item]
-        
-        self.ndBtnsFrame = CGRect(x: 0, y: self.ndHintLabel.frame.maxY+LineSpacing, width: self.frame.width, height: 44)
+        let btnw =  (ndBtnsview.frame.width > (136 + 20) ? 136 :ndBtnsview.frame.width-20)
+        item.frame = CGRect(x: (ndBtnsview.frame.width - btnw)/2.0, y: 0, width: btnw, height: 44)
+        ndBtnsview.addSubview(item)
+        self.bringSubview(toFront: self.noNetView)
     }
     
     @objc func reachabilityChanged(_ notificate:Notification) {
+        
         if let cursh:Reachability = notificate.object as? Reachability {
             switch cursh.currentReachabilityStatus(){
             case NetworkStatus.init(0):
-                for subview in self.subviews{
-                    subview.removeFromSuperview()
-                }
-                defaultNoNet()
-                self.initUI(hasImg: true, hasPlaceLabel: true,hasBtn: true)
+                addNoNetView()
                 print("无网络")
                 break
             case NetworkStatus.init(1):
+                self.noNetView.removeFromSuperview()
                 print("wifi")
                 break
             case NetworkStatus.init(2):
+                self.noNetView.removeFromSuperview()
                 print("蜂窝")
                 break
             default:
@@ -213,16 +246,19 @@ class FCFPlaceHolderContentView:UIView {
 }
 
 extension FCFPlaceHolderContentView{
-    func initUI(hasImg:Bool,hasPlaceLabel:Bool,hasBtn:Bool){
+    func updateUI(hasImg:Bool,hasPlaceLabel:Bool,hasBtn:Bool){
+        self.noDataView.removeFromSuperview()
+        self.insertSubview(self.noDataView, at: 0)
         if hasImg {
             //添加image
-            self.addSubview(self.ndBgImgView)
+            self.noDataView.addSubview(self.ndBgImgView)
         }
         if hasPlaceLabel {
-            self.addSubview(self.ndHintLabel)
+            self.noDataView.addSubview(self.ndHintLabel)
         }
         if hasBtn {
-            self.addSubview(self.ndBtnsView)
+            self.noDataView.addSubview(self.ndBtnsView)
+            
             let count = self.ndBtns.count > 3 ? self.ndBtns.count : self.ndBtns.count
             for (index, item) in self.ndBtns.enumerated() {
                 if index > 2 {break}

@@ -21,9 +21,6 @@ class NoDataHintSCrollViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
     }
-    
-    
-    
 }
 
 

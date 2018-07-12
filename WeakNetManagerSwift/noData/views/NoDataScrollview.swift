@@ -15,8 +15,6 @@ enum NoDataType {
 
 class NoDataScrollview:UIScrollView {
     
-    //
-    
     init(frame: CGRect,type:NoDataType) {
         super.init(frame: frame)
         self.contentSize = CGSize(width: self.frame.width, height: self.frame.height + 0.5)
